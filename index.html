@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headcontainer">
+            <h3 class="headfirst">👑Sachin Munbai King👑</h3>
+            <h5>100% Accuracy Milega Yaha Apko</h5>
+            <h1 class="time">5</h1>
+            <span class="txt">Second Left</span> 
+           <div class="photo">
+            <img src="img2.jpg" alt="">
+           </div>
+           <h4 class="lasthead">⚡BACK-TO-BACK MATCH PASS⚡</h4>
+           <h4 class="lasthead">IPL ALL MATCH PASS ☑</h4>
+           <h4 class="lasthead">ASIA CUP ALL MATCH PASS ☑</h4>
+
+           <button class="btn" disabled>JOIN THE CHANNEL NOW</button>
+        </div>
+    </div>
+
+
+    <script>
+        var timer = document.querySelector('.time');
+        var bt = document.querySelector('.btn')
+        var tx = document.querySelector('.txt')
+
+        var count = timer.innerText;
+        function set(){
+           
+               var sec =  setInterval(() => {
+                if(count == 0) return stopsec()
+                    count--;
+                    timer.innerText = count;
+                }, 1000);
+
+                
+                function stopsec(){
+                clearInterval(sec);
+                timer.style.visibility = "hidden";
+                tx.style.visibility = "hidden";
+            
+                bt.disabled = false;
+            } 
+        }
+        set();
+        console.log(tx);
+    
+    </script>
+</body>
+</html>
