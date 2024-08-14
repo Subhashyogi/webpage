@@ -6,8 +6,7 @@
 
 
 .container{
-    border: 1px solid red;
-    height: 726px;
+    height: 100vh;
     width: 320;
     background: url(img2.jpg);
     display: flex;
@@ -42,7 +41,6 @@ span{
 }
 
 .photo{
-    border: 1px dotted red;
     width: 120px;
     height: 120px;
     margin-top: 20px;
@@ -73,4 +71,8 @@ img{
     font-weight: bold;
     background: #ebe816;
     margin-top: 10px;
+}
+
+@media (max-height:768px){
+   
 }
